@@ -9,6 +9,7 @@ give access
 
 
 How to push code into github from vs code Steps:-
+check current repo git remote -v
 
 1.github remote remove origin
 2. git remote add origin https://github.com/satyam9721/resume-next
