@@ -1,0 +1,16 @@
+Give access to vs code to push code on github:-
+1.verify first:- git config --global --list
+give access
+2.cd your-repository
+3.git config user.name "satyam9721"
+4.git config user.email "satyamrau9721@gmail.com"
+5.git remote -v
+
+
+
+How to push code into github from vs code Steps:-
+
+1.github remote remove origin
+2. git remote add origin https://github.com/satyam9721/resume-next
+3.git remote -v
+4.git push -u origin main
