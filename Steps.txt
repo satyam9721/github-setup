@@ -15,3 +15,16 @@ check current repo git remote -v
 2. git remote add origin https://github.com/satyam9721/resume-next
 3.git remote -v
 4.git push -u origin main
+
+
+>git branch ( to see the current branch name )
+
+>git pull  (if you created new branch to server)
+
+> git checkout devops_nana  (to switch the branch on local)
+
+>git checkout -b feature/database-connection (to create the branch on local)
+
+>git commit ( then write the "something" then ctrl+s,then exit)
+
+> git push --set-upstream origin feature/database-connection (to push the branch on the server from local)
