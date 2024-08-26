@@ -14,6 +14,9 @@ check current repo git remote -v
 1.git remote remove origin
 2. git remote add origin https://github.com/satyam9721/resume-next
 3.git remote -v
+4. git status
+5. git add .
+6. git status
 4.git push -u origin main
 
 
