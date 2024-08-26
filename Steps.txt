@@ -12,12 +12,23 @@ How to push code into github from vs code Steps:-
 check current repo git remote -v
 
 1.git remote remove origin
+=> => git init
 2. git remote add origin https://github.com/satyam9721/resume-next
 3.git remote -v
 4. git status
 5. git add .
 6. git status
-4.git push -u origin main
+7. git commit -m "init"
+8.git push -u origin main  or  git push origin master
+
+----------------------------------------------------------------------------
+if face this issue,then see
+fatal: not a git repository (or any of the parent directories): .git 
+
+>git branch --show-current  (to see current branch)
+
+
+
 
 
 >git branch ( to see the current branch name )
