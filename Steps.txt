@@ -19,7 +19,7 @@ check current repo git remote -v
 5. git add .
 6. git status
 7. git commit -m "init"
-8.git push -u origin main  or  git push origin master
+8. git push -u origin main  or git push -u origin main  or  git push origin master
 
 ----------------------------------------------------------------------------
 if face this issue,then see
@@ -27,6 +27,15 @@ fatal: not a git repository (or any of the parent directories): .git
 
 >git branch --show-current  (to see current branch)
 
+
+=> if you are pushing large file then use these commands to avoid the error
+
+> git config --global http.postBuffer 157286400
+> git lfs install
+> git lfs track "*.largefileextension"
+> git add .gitattributes
+> git commit -m "Track large files"
+> git push origin main
 
 
 
