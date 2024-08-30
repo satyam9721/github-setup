@@ -19,7 +19,7 @@ check current repo git remote -v
 5. git add .
 6. git status
 7. git commit -m "init"
-8. git push -u origin main  or git push -u origin main  or  git push origin master
+8. git push origin main  or git push -u origin main  or  git push origin master
 
 ----------------------------------------------------------------------------
 if face this issue,then see
