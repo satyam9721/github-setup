@@ -81,13 +81,53 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 done:Enumerating objects: 12, done.
 Counting objects: 100% (12/12), done.
-Delta compression using up to 16 threads
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (7/7), 666 bytes | 666.00 KiB/s, done.
-Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
-To https://github.com/satyam9721/resume_next.git
-   8e8d29b..c251586  main -> main
+
+-----------------  git concepts --------------------------
+
+> git branch
+
+>git pull  (if you created new branch to server)
+
+> git checkout devops_nana  (to switch the branch on local)
+
+>git checkout -b feature/database-connection (to create the branch on local)
+
+>git commit ( then write the "something" then ctrl+s,then exit)
+
+> git push --set-upstream origin feature/database-connection (to push the branch on the server from local)
+
+> git branch -D feature/database (to delete the branches)
+
+
+>git pull -r (to avoid unessary commit by two dev engineer on the same branchs)
+
+git push
+
+>git rebase --continue
+
+> git rm -r --cached .node_modules (to remove the module from cahced)
+
+> git commit -m"removed the node_module form directory"
+
+stash is hide changes temporarily
+
+> git stash (save the changes in slash, if you do git status there will be no chages effected.)
+
+> git status
+
+
+>git stash pop (to back the changes)
+
+
+> git log (to see the commit history,commit id extracion)
+
+commit_id = er42ernbjk32
+
+> git checkout er42ernbjk32 (detached state,prev state code)
+
+branch = bugfix/user_auth-error
+
+> git checkout bugfix/user_auth-error (to move into latest commit)
 
 
 
