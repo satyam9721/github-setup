@@ -129,6 +129,10 @@ branch = bugfix/user_auth-error
 
 > git checkout bugfix/user_auth-error (to move into latest commit)
 
+(to delete the all brach except main|master)
+>git branch | ForEach-Object { if ($_ -notmatch "main|master") { git branch -D $_.Trim() } }
+
+
 
 
 
