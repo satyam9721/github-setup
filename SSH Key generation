@@ -1,3 +1,4 @@
+"This issues happen when you are cloning github repo of organization"
 SSH key genration to use multiple github account by same devices "ge.dev009".
 Here are the steps and commands tailored for Windows, particularly using Git Bash or the terminal within Git for Windows:
     1  ls -al ~/.ssh
