@@ -132,6 +132,22 @@ branch = bugfix/user_auth-error
 (to delete the all brach except main|master)
 >git branch | ForEach-Object { if ($_ -notmatch "main|master") { git branch -D $_.Trim() } }
 
+---------------------------
+Pushing code already created branch.(GE_dev)
+> git remote -v
+> git remote remove origin
+
+> git remote add origin https://github.com/satyam9721/resume-next
+
+  git stash
+   git pull
+  git status
+  git add .
+  git status
+  git branch
+   git commit -m "negative_value_fix"
+   git push -u origin Dev
+
 
 
 
