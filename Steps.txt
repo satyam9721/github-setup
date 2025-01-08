@@ -136,6 +136,8 @@ branch = bugfix/user_auth-error
 Pushing code already created branch.(GE_dev)
 > git remote -v
 > git remote remove origin
+to clone specfic branch from git repo
+git clone --branch Refactor git@github.com:ge-org-01/Zaplyn-01.git
 
 > git remote add origin https://github.com/satyam9721/resume-next
 
