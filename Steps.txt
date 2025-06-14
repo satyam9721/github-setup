@@ -150,6 +150,21 @@ git clone --branch Refactor git@github.com:ge-org-01/Zaplyn-01.git
    git commit -m "negative_value_fix"
    git push -u origin Dev
 
+---------------------------------------------
+To delete the multiple node modules folders from root directory
+
+D:> Get-ChildItem -Path "D:\GE.devloper\Refactor" -Recurse -Directory -Force -Filter "node_modules" -ErrorAction SilentlyContinue | ForEach-Object {
+    try {
+        Takeown /F $_.FullName /R /D Y | Out-Null
+        icacls $_.FullName /grant administrators:F /T | Out-Null
+        Remove-Item $_.FullName -Recurse -Force -ErrorAction Stop
+        Write-Host "Deleted: $($_.FullName)"
+    } catch {
+        Write-Warning "Failed to delete: $($_.FullName) - $($_.Exception.Message)"
+    }
+}
+
+
 
 
 
