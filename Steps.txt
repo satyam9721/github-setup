@@ -44,11 +44,15 @@ fatal: not a git repository (or any of the parent directories): .git
 
 >git pull  (if you created new branch to server)
 
-> git checkout devops_nana  (to switch the branch on local)
+> git checkout devops_nana  (to switch the branch on local, when it's created)
 
 >git checkout -b feature/database-connection (to create the branch on local)
 
->git commit ( then write the "something" then ctrl+s,then exit)
+>git add .
+
+> git status
+
+>git commit -m ( then write the "something" then ctrl+s,then exit)
 
 > git push --set-upstream origin feature/database-connection (to push the branch on the server from local)
 
